@@ -20,7 +20,9 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <p className="text-cyan-400 font-mono mb-3">Hi, my name is</p>
+                    <p className="text-cyan-400 font-mono mb-3">
+                        Hi, my name is
+                    </p>
 
                     <h1 className="text-5xl md:text-7xl font-bold mb-4 text-white">
                         {personalInfo.name}
@@ -42,6 +44,7 @@ export default function Hero() {
                         >
                             View Projects
                         </a>
+
                         <a
                             href={personalInfo.resumeLink}
                             target="_blank"
@@ -62,6 +65,7 @@ export default function Hero() {
                         >
                             <FaGithub />
                         </a>
+
                         <a
                             href={personalInfo.linkedin}
                             target="_blank"
@@ -70,7 +74,6 @@ export default function Hero() {
                         >
                             <FaLinkedin />
                         </a>
-                       
                     </div>
                 </motion.div>
 
@@ -82,12 +85,17 @@ export default function Hero() {
                     className="flex justify-center"
                 >
                     <div className="relative">
+
+                        {/* Gradient Circle */}
                         <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-cyan-500 to-purple-500 p-1">
+
+                            {/* Profile Image */}
                             <img
                                 src="/my photo.jpeg"
                                 alt={personalInfo.name}
-                                className="w-full h-full rounded-full object-cover bg-slate-900"
+                                 className="w-full h-full rounded-full object-cover object-[center_33%]"
                             />
+
                         </div>
                     </div>
                 </motion.div>
