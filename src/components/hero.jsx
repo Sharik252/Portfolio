@@ -93,7 +93,7 @@ export default function Hero() {
                             <img
                                 src="/my photo.jpeg"
                                 alt={personalInfo.name}
-                                 className="w-full h-full rounded-full object-cover object-[center_33%]"
+                                 className="w-full h-full rounded-full object-cover object-[center_15%]"
                             />
 
                         </div>
